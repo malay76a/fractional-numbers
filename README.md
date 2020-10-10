@@ -1,3 +1,7 @@
-#TODO
-1. хотелось бы избавиться от как такового класса и разбить все на функции которые работают с нужным типом данных
-1. сейчас добавленны настройки по умолчанию, как для TS, так и для Jest
+# fractional-numbers
+
+```typescript
+import {FractionalNumbers} from 'fractional-numbers';
+
+new FractionalNumbers('1/2 + 1/2 * 3') // 4/2
+```

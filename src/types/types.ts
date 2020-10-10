@@ -1,5 +1,5 @@
 export interface FractionalNumbersType {
-    readonly numerator: number;
-    readonly denominator: number;
+    readonly numerator: number | bigint;
+    readonly denominator: number | bigint;
     readonly negative?: boolean;
 }

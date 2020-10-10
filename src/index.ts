@@ -1,7 +1,2 @@
-import {FractionalNumbersType} from './types/types';
-import {Wrapper as FractionalNumbers} from './wrapper';
-
-export {
-    FractionalNumbersType,
-    FractionalNumbers
-}
+export {FractionalNumbersType} from './types/types';
+export {Wrapper as FractionalNumbers} from './wrapper';

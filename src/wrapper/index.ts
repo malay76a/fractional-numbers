@@ -9,8 +9,8 @@ import {division as div} from '../division';
 export class Wrapper {
     readonly value: FractionalNumbersType;
 
-    constructor(...input: unknown[]) {
-        const {numerator, denominator} = getFractionNumberFromUnknown('1/2');
+    constructor(...input: (number | string | bigint | FractionalNumbersType)[]) {
+        const {numerator, denominator} = getFractionNumberFromUnknown(...input);
         this.value = {
             numerator,
             denominator,
@@ -39,12 +39,7 @@ export class Wrapper {
     }
 
     // TODO
-    // static calc(str: string): AbstractWrapper {
-    //     return;
-    // }
-
-    // TODO
-    // static parse(str: string): AbstractWrapper {
+    // static calc(str: string): Wrapper {
     //     return;
     // }
 }

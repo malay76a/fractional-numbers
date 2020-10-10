@@ -21,6 +21,11 @@ test('5/20 mult 2/3', () => {
     expect(fn.toString()).toBe('10/60');
 })
 
+test('1/5 + 1/4', () => {
+    const fn = new FractionalNumbers('1/5 + 1/4');
+    expect(fn.toString()).toBe('9/20');
+})
+
 test('1/2 + 1/2 * 3', () => {
     const fn = new FractionalNumbers('1/2 + 1/2 * 3');
     expect(fn.toString()).toBe('4/2');
